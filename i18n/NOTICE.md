@@ -1,3 +1,15 @@
+
+## Docker 启动
+cd Flowise
+sudo docker build -t flowise .
+
+sudo docker run -d --name flowise -p 3000:3000 --env-file .env -v ~/flowise_logs:/data/logs flowise 
+
+sudo docker ps -a
+sudo docker logs flowise
+
+
+
 291  npm install -g pm2
 295  pm2 list  
 296  pm2 start npm --name flowise -- run start
@@ -23,7 +35,6 @@ pnpm install --frozen-lockfile
 DEBUG=* pnpm run dev
 export NODE_OPTIONS="--max_old_space_size=4096"
 pnpm run dev
-
 
 
 

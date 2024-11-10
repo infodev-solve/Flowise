@@ -1,3 +1,10 @@
+
+
+docker ps
+docker-compose down
+docker compose up -d
+
+
 # Flowise Docker Hub Image
 
 Starts Flowise from [DockerHub Image](https://hub.docker.com/r/flowiseai/flowise)
