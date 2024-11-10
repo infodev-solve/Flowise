@@ -43,5 +43,5 @@ services:
         ports:
             - '${PORT}:${PORT}'
         volumes:
-            - ~/.flowise:/data/logs/.flowise
+            - /data/logs/.flowise:/data/logs/.flowise
         entrypoint: /bin/sh -c "sleep 3; flowise start"

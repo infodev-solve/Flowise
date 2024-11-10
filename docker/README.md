@@ -1,5 +1,6 @@
 
 
+cd /home/ec2-user/github/Flowise/docker
 docker ps
 docker-compose down
 docker compose up -d
